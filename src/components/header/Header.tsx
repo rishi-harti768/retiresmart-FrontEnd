@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion, useScroll, useSpring } from "motion/react";
 import "./Header.css";
 
 interface Props {
@@ -20,7 +20,7 @@ const Header = ({ current }: Props) => {
   return (
     <>
       <header>
-        <div className="progress-bar"></div>
+        <ProgressBar />
 
         <Image
           src="/vercel.svg"
@@ -75,6 +75,7 @@ const NavItems = ({
         initial="bedown"
         whileHover={"beup"}
         className={type}
+        draggable={false}
       >
         {label.split("").map((item, index) => {
           return (
@@ -88,7 +89,11 @@ const NavItems = ({
                   y: "0",
                 },
               }}
-              transition={{ duration: 0.128 * (index + 1), type: "spring" }}
+              transition={{
+                duration: 0.128 * (index + 1),
+                delay: 0.032,
+                type: "spring",
+              }}
             >
               <div>{item}</div>
               <div className="purple">{item}</div>
@@ -96,6 +101,21 @@ const NavItems = ({
           );
         })}
       </motion.a>
+    </>
+  );
+};
+
+const ProgressBar = () => {
+  const { scrollYProgress } = useScroll();
+  return (
+    <>
+      <motion.div
+        className="progress-bar"
+        initial={{ scaleX: 0 }}
+        style={{
+          scaleX: useSpring(scrollYProgress, { stiffness: 900, damping: 24 }),
+        }}
+      ></motion.div>
     </>
   );
 };

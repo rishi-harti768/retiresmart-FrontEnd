@@ -1,0 +1,6 @@
+footer {
+    min-height: 60svh;
+    background-color: #4444;
+    display: grid;
+    place-items: center;
+}
