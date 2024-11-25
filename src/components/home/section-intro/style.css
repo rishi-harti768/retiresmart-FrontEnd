@@ -1,0 +1,22 @@
+section.intro {
+    position: relative;
+    height: 150svh;
+}
+
+section.intro>.background {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+section.intro>.background>.motion {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    background-image: url("/");
+}
