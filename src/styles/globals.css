@@ -32,7 +32,7 @@
   --uxxlarge: 6.4rem;
 
   --color-primary: #121212;
-  --color-secondary: #8768df;
+  --color-secondary: #673de5;
   --color-tertiary: #00b4d8;
   --color-white: #ddd;
 }
@@ -52,6 +52,7 @@ body {
   /* overflow-x: hidden; */
   height: 100svh;
   background-color: var(--color-primary);
+  scroll-behavior: smooth;
 }
 
 a {

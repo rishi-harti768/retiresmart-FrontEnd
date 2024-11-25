@@ -1,6 +1,7 @@
 main {
     position: relative;
 }
-article{
+
+article {
     min-height: 100svh;
 }

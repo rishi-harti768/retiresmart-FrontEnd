@@ -23,7 +23,7 @@ const Header = ({ current }: Props) => {
         <ProgressBar />
 
         <Image
-          src="/vercel.svg"
+          src="/logo.svg"
           alt="Vercel Logo"
           width={64}
           height={64}
@@ -113,7 +113,7 @@ const ProgressBar = () => {
         className="progress-bar"
         initial={{ scaleX: 0 }}
         style={{
-          scaleX: useSpring(scrollYProgress, { stiffness: 900, damping: 24 }),
+          scaleX: useSpring(scrollYProgress),
         }}
       ></motion.div>
     </>
