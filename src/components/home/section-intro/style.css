@@ -1,0 +1,46 @@
+section.intro{
+    height: 100svh;
+    
+    display: grid;
+    place-items: center;
+    align-content: center;
+  }
+  
+  section.intro > .wave-text {
+    color: white;
+    font-size: 1.5rem;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+  }
+  
+  section.intro > .main-title {
+    color: white;
+    font-size: 4rem;
+    margin: 1rem 0;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: var(--ularge);
+  }
+  
+  section.intro > .subtitle {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+  }
+  
+  section.intro > .cta-button {
+    background-color: #a87cff;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  section.intro > .cta-button:hover {
+    background-color: #956dee;
+  }
