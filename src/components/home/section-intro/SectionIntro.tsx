@@ -1,3 +1,4 @@
+"use client";
 import React, { useRef } from "react";
 import "./style.css";
 import {
@@ -53,6 +54,7 @@ const SectionIntro = () => {
                   stroke="#3BA53D"
                   strokeWidth="8"
                   style={{ pathLength: len }}
+                  transition={{ type: "spring", damping: 64, stiffness: 2048 }}
                 />
                 <motion.path
                   d="M475.57 12.9485L467.699 42.3234L446.195 20.8195L475.57 12.9485Z"
@@ -149,6 +151,9 @@ const SectionIntro = () => {
                 duration: 0.512,
                 damping: 16,
                 stiffness: 512,
+              }}
+              onClick={() => {
+                alert("clicked");
               }}
             >
               Get Started

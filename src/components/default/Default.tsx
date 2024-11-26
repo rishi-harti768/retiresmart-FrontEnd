@@ -1,3 +1,4 @@
+"use client";
 import { ReactNode } from "react";
 import "./default.css";
 import Header from "../header/Header";

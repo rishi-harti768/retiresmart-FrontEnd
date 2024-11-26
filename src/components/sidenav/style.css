@@ -1,0 +1,21 @@
+nav.side-nav {
+    position: fixed;
+    z-index: 100;
+    padding: var(--umedium);
+    top: var(--uxlarge);
+    right: 0;
+    width: 100%;
+    height: calc(100svh - var(--uxlarge));
+    background-color: var(--color-secondary);
+    transform-origin: 100% 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--umedium);
+    font-size: var(--font-large);
+}
+
+nav.side-nav .navopt {
+    transform-origin: 100% 0%;
+}

@@ -1,13 +1,13 @@
 section.intro {
   position: relative;
-  height: 150svh;
+  height: 200svh;
 }
 
 section.intro>.background,
 section.intro>.foreground {
   position: absolute;
   width: 100%;
-  height: 150svh;
+  height: 200svh;
 }
 
 section.intro .frame {

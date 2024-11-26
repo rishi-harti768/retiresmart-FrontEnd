@@ -3,6 +3,14 @@ section.feature {
     place-items: center;
 }
 
+section.feature>h2 {
+    color: transparent;
+    background-image: radial-gradient(circle farthest-corner at center center, #ddda, #0f0f0f);
+    background-position: 50% 50%;
+    background-size: 1000%;
+    background-clip: text;
+}
+
 section.feature>.feature-list {
     max-width: 1024px;
     padding: var(--umedium);

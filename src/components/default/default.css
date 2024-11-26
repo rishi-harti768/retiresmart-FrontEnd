@@ -4,4 +4,6 @@ main {
 
 article {
     min-height: 100svh;
+    position: relative;
+    top: 0;
 }

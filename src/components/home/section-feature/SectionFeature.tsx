@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, useAnimation, useInView } from "framer-motion";
@@ -16,7 +17,19 @@ const SectionFeature = () => {
   return (
     <>
       <section className="feature">
-        <h2>Feature</h2>
+        <motion.h2
+          initial={{ backgroundSize: "100%" }}
+          drag
+          dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+          dragElastic={0.12}
+          whileHover={{ scale: 1.28 }}
+          whileDrag={{ scale: 2.56 }}
+          whileInView={{
+            backgroundSize: "150%",
+          }}
+        >
+          Features
+        </motion.h2>
         <div className="feature-list">
           <List
             className="top-left"
@@ -70,7 +83,7 @@ const List = ({
   desc: string;
 }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-10px" });
+  const isInView = useInView(ref, { once: false, margin: "-10px" });
   const anim = useAnimation();
   useEffect(() => {
     if (isInView) {
@@ -86,11 +99,18 @@ const List = ({
           show: { x: 0 },
         }}
         initial="hide"
-        animate={anim}
+        whileInView="show"
         transition={{ delay: 0.064, type: "spring" }}
         ref={ref}
       >
-        <Image src={img} alt="icon" width={64} height={64} priority />
+        <Image
+          src={img}
+          alt="icon"
+          width={64}
+          height={64}
+          priority
+          draggable={false}
+        />
         <div>
           <h3>{title}</h3>
           <p>{desc}</p>
