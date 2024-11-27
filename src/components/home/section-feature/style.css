@@ -4,6 +4,7 @@ section.feature {
 }
 
 section.feature>h2 {
+    font-size: var(--font-xlarge);
     color: transparent;
     background-image: radial-gradient(circle farthest-corner at center center, #ddda, #0f0f0f);
     background-position: 50% 50%;
@@ -77,5 +78,8 @@ section.feature>.feature-list {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+    section.feature>h2 {
+        font-size: var(--font-large);
     }
 }

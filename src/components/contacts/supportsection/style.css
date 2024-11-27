@@ -1,0 +1,46 @@
+ /* Extra Features */
+ .extra-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 30px 20px;
+    background: #1a1a1a;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin: 30px auto;
+    max-width: 800px;
+  }
+  
+  .extra-features .feature {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #2d2d2d;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #e0e0e0;
+  }
+  
+  .extra-features .feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(168, 124, 255, 0.4); /* Purple glow */
+  }
+  
+  .extra-features button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #a87cff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .extra-features button:hover {
+    background: #6f49b8;
+    transform: scale(1.05);
+  }
