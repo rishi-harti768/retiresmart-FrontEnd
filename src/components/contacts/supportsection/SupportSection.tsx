@@ -20,7 +20,9 @@ const SupportSection = () => {
       <section className="extra-features">
         <div className="feature">
           <h2>💬 Live Chat Support</h2>
-          <p>Have questions? Get instant answers from our AI-powered chatbot.</p>
+          <p>
+            Have questions? Get instant answers from our AI-powered chatbot.
+          </p>
           <button onClick={startChat}>Start Chat</button>
         </div>
         <div className="feature">

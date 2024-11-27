@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect } from 'react';
-import "./style.css"
+import React, { useEffect } from "react";
+import "./style.css";
 
 const FormSection = () => {
   useEffect(() => {
@@ -41,7 +41,9 @@ const FormSection = () => {
       };
 
       const handleScroll = () => {
-        const scrollPercent = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+        const scrollPercent =
+          window.scrollY /
+          (document.documentElement.scrollHeight - window.innerHeight);
 
         // Update stroke offset
         const draw = totalLength * (1 - scrollPercent);
@@ -61,7 +63,9 @@ const FormSection = () => {
         window.removeEventListener("scroll", handleScroll);
       };
     } else {
-      console.error("Element with ID 'curvedPath' is not an SVGPathElement or does not exist.");
+      console.error(
+        "Element with ID 'curvedPath' is not an SVGPathElement or does not exist."
+      );
     }
   }, []);
 
@@ -75,7 +79,11 @@ const FormSection = () => {
 
   return (
     <>
-      <svg className="curved-line" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+      <svg
+        className="curved-line"
+        viewBox="0 0 1000 1000"
+        preserveAspectRatio="none"
+      >
         <path
           d="M 0 800 
              C 200 800, 100 200, 300 400 
@@ -88,13 +96,16 @@ const FormSection = () => {
         />
       </svg>
 
-      
-      
       <section className="contact-form">
         <h2>Quick Connect Form</h2>
         <form id="contactForm">
           <input type="text" name="name" placeholder="Your Name *" required />
-          <input type="email" name="email" placeholder="Your Email *" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email *"
+            required
+          />
           <input type="text" name="phone" placeholder="Your Phone (Optional)" />
           <select name="subject">
             <option value="general">General Inquiry</option>
@@ -102,17 +113,18 @@ const FormSection = () => {
             <option value="feedback">Feedback</option>
             <option value="partnership">Partnership Opportunity</option>
           </select>
-          <textarea name="message" placeholder="Your Message *" required></textarea>
+          <textarea
+            name="message"
+            placeholder="Your Message *"
+            required
+          ></textarea>
           <label>
-            <input type="checkbox" required /> I agree to the <a href="#">terms of service</a> and <a href="#">privacy policy</a>.
+            <input type="checkbox" required /> I agree to the{" "}
+            <a href="#">terms of service</a> and <a href="#">privacy policy</a>.
           </label>
           <button type="submit">Let’s Connect 🚀</button>
         </form>
       </section>
-
- 
-
-     
     </>
   );
 };
