@@ -1,14 +1,17 @@
-"use client";
-import "./page.css";
+import FormSection from '@/components/contacts/form-section/FormSection'
+import SupportSection from '@/components/contacts/supportsection/SupportSection'
+import Default from '@/components/default/Default'
+import React from 'react'
 
-import Default from "@/components/default/Default";
-
-export default function Page() {
+const page = () => {
   return (
-    <>
-      <Default current="Contact">
-        <h1>this is Contact page</h1> 
-      </Default>
-    </>
-  );
+   <>
+   <Default current='Contact'>
+    <FormSection />
+    <SupportSection />
+   </Default>
+   </>
+  )
 }
+
+export default page
