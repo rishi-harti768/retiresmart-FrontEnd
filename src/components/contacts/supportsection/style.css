@@ -2,24 +2,24 @@
  .extra-features {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    padding: 30px 20px;
+    gap: var(--umedium);
+    padding:  var(--umedium) var(--umedium);
     background: #1a1a1a;
-    border-radius: 15px;
+    border-radius: var(--usmall);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    margin: 30px auto;
-    max-width: 800px;
+    margin: var(--umedium) auto;
+    max-width: calc(var(--uxxlarge)*8);
   }
   
   .extra-features .feature {
     flex: 1;
     text-align: center;
-    padding: 20px;
+    padding:var(--umedium);
     background: #2d2d2d;
-    border-radius: 10px;
+    border-radius: var(--usmall);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
-    color: #e0e0e0;
+    color: var(--color-white);
   }
   
   .extra-features .feature:hover {
@@ -28,19 +28,19 @@
   }
   
   .extra-features button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #a87cff;
-    color: white;
+    margin-top: var(--usmall);
+    padding: var(--usmaller) var(--usmall);
+    background: var(--color-secondary);
+    color: var(--color-white);
     border: none;
-    border-radius: 5px;
-    font-size: 1rem;
+    border-radius: var(--uxsmall);
+    font-size: var(--font-smaller);
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
   }
   
   .extra-features button:hover {
-    background: #6f49b8;
+    background: var(--color-secondary);
     transform: scale(1.05);
   }
