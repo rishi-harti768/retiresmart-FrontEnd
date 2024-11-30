@@ -21,7 +21,7 @@ const navOptions = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
-  { label: "Login", href: "/auth" },
+  { label: "Sign In", href: "/auth/signin" },
 ];
 
 const Header = ({ current }: Props) => {

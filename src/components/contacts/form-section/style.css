@@ -20,8 +20,6 @@ h1 {
   padding: 2rem 0;
 }
 
-
-
 .contact form h1,
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -30,14 +28,6 @@ h2 {
   color: #a87cff;
   /* Purple accent color */
 }
-
-
-
-
-
-
-
-
 
 /* Contact Form */
 .contact-form {
@@ -140,10 +130,6 @@ h2 {
   background: #6f49b8;
   transform: scale(1.05);
 }
-
-
-
-
 
 /* Responsive Design for Small Screens (Mobile) */
 @media (max-width: 480px) {

@@ -99,7 +99,7 @@ const FormSection = () => {
       <section className="contact-form">
         <h2>Quick Connect Form</h2>
         <form id="contactForm">
-          <input type="text" name="name" placeholder="Your Name *" required />
+          <input type="text" name="name" placeholder="Your Name" required />
           <input
             type="email"
             name="email"
@@ -122,7 +122,7 @@ const FormSection = () => {
             <input type="checkbox" required /> I agree to the{" "}
             <a href="#">terms of service</a> and <a href="#">privacy policy</a>.
           </label>
-          <button type="submit">Let’s Connect 🚀</button>
+          <button type="submit">Let's Connect 🚀</button>
         </form>
       </section>
     </>

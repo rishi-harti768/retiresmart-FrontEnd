@@ -1,6 +1,6 @@
 footer {
-    min-height: 60svh;
-    background-color: #4444;
+    min-height: calc(100svh - var(--uxlarge));
+    background-color: var(--color-primary);
     display: grid;
     place-items: center;
 }

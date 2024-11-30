@@ -89,7 +89,7 @@ const List = ({
     if (isInView) {
       anim.start("show");
     }
-  }, [isInView]);
+  }, [isInView, anim]);
   return (
     <>
       <motion.div

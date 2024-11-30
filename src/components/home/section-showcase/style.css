@@ -1,0 +1,62 @@
+section.showcase {
+    padding: var(--umedium);
+    display: grid;
+    gap: var(--umedium);
+    grid-template-rows: repeat(2, 256px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+section.showcase>div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--umedium);
+    overflow: hidden;
+}
+
+section.showcase>.portfolio {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-secondary);
+    background-image: linear-gradient(315deg, var(--color-secondary), var(--color-primary), var(--color-primary));
+}
+
+section.showcase>.portfolio>.content {
+    padding: var(--usmall);
+    position: relative;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    background-color: #1f1f1f;
+    border-radius: inherit;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+section.showcase>.rebalence {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+section.showcase>.optimize {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+
+section.showcase>.feature {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+section.showcase>.portfolio>.content>.anim {
+    aspect-ratio: 1;
+    height: 150%;
+    position: absolute;
+    top: 0;
+    right: -48%;
+    display: grid;
+    place-items: center;
+}
