@@ -93,7 +93,7 @@ footer {
   /* Section 3: Address */
   .footer-address {
     text-align: left;
-    margin-left: 180px;
+    margin-left: auto;
   }
   
   .footer-address h3 {
