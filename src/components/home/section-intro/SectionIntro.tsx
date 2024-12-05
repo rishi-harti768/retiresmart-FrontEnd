@@ -9,8 +9,11 @@ import {
   motion,
   useAnimation,
 } from "motion/react";
+import { useRouter } from "next/navigation";
 
 const SectionIntro = () => {
+  const route = useRouter();
+
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref });
   const scale = useTransform(scrollYProgress, [0, 0.64, 1], [1, 1, 0.8]);
@@ -152,11 +155,9 @@ const SectionIntro = () => {
                 damping: 16,
                 stiffness: 512,
               }}
-              onClick={() => {
-                alert("clicked");
-              }}
+              onClick={() => route.push("/beta")}
             >
-              Get Started
+              Try Beta
             </motion.button>
           </motion.div>
         </div>

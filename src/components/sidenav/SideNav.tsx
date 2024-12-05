@@ -8,6 +8,7 @@ const navOptions = [
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "Login", href: "/auth" },
+  { label: "Try Beta", href: "/beta" },
 ];
 
 const SideNav = ({ state }: { state: boolean }) => {

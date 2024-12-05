@@ -39,9 +39,7 @@ const Header = ({ current }: Props) => {
 
   const [isSideNavOpen, setIsSideNavOpen] = useState(false);
 
-  useEffect(() => {
-    console.log(isSideNavOpen);
-  }, [isSideNavOpen]);
+  useEffect(() => {}, [isSideNavOpen]);
 
   const sideNav = () => {
     setIsSideNavOpen(!isSideNavOpen);

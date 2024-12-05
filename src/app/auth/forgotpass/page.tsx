@@ -10,7 +10,7 @@ export default function Page() {
   const [isSubmitting, setIsSubmitting] = useState(false); // State for submission status
   const [message, setMessage] = useState(""); // State for feedback messages
 
-  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault(); // Prevent page reload on form submission
     setIsSubmitting(true); // Disable the button while submitting
 
@@ -74,7 +74,7 @@ export default function Page() {
           </form>
 
           {/* Back to Login */}
-          <Link href="/auth" className={styles.backLink}>
+          <Link href="/auth/signin" className={styles.backLink}>
             Back to Login
           </Link>
         </div>
