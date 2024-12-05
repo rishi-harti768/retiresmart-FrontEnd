@@ -11,8 +11,9 @@ export default function Page() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    /*
     // Add your password reset logic here
-    setError("Something went wrong. Please try again.");
+    setError("Something went wrong. Please try again."); */
   };
 
   const preventCopy = (e: React.ClipboardEvent) => {

@@ -16,7 +16,7 @@ export default function Page() {
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    // Simulated login logic or API call
+    /* // Simulated login logic or API call
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isAnEmail = emailPattern.test(email);
 
@@ -39,7 +39,7 @@ export default function Page() {
 
     let data = await fetch("http://localhost:9876/auth/login", options);
     let posts = await data.json();
-    console.log(posts);
+    console.log(posts); */
     // Add your login logic here
   };
 

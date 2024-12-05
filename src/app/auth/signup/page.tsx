@@ -16,7 +16,7 @@ export default function Page() {
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    setFormError("");
+    /* setFormError("");
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isAnEmail = emailPattern.test(email);
     console.log(isAnEmail);
@@ -46,7 +46,7 @@ export default function Page() {
 
     let data = await fetch("http://localhost:9876/auth/register", options);
     let posts = await data.json();
-    console.log(posts);
+    console.log(posts); */
   };
 
   const onToggle = () => {

@@ -12,6 +12,7 @@ export default function Page() {
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault(); // Prevent page reload on form submission
+    /* 
     setIsSubmitting(true); // Disable the button while submitting
 
     try {
@@ -22,7 +23,7 @@ export default function Page() {
       setMessage("Failed to send reset email. Please try again.");
     } finally {
       setIsSubmitting(false); // Re-enable the button
-    }
+    } */
   };
 
   return (

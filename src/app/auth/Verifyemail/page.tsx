@@ -57,7 +57,7 @@ const Page = () => {
 
             {/* Resend Email Button */}
             <button
-              onClick={handleResendEmail}
+              onClick={() => {}}
               className={styles.submitButton}
               disabled={isSubmitting}
             >
