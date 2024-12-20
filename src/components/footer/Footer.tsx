@@ -7,12 +7,12 @@ const Footer = () => {
       {/* Section 1: Brand Name and Tagline */}
       <div className="footer-brand">
         <h2>RetirSmart</h2>
-        <p>"Your Gateway to Financial Freedom"</p>
+        <p>Your Gateway to Financial Freedom</p>
         <div className="social-links">
-          <a href="#"><img src="/icons/logos/twitterlogo.png" alt="Twitter" className="twitter" /> Twitter</a>
-          <a href="#"><img src="/icons/logos/youtubelogo.png" alt="YouTube" className="youtube" /> YouTube</a>
-          <a href="#"><img src="/icons/logos/instagramlogo.png" alt="Instagram" className="instagram" /> Instagram</a>
-          <a href="#"><img src="/icons/logos/linkedinlogo.png" alt="LinkedIn" className="linkedin" /> LinkedIn</a>
+          <a href="#"><img src="/icons/logos/twitterlogo.png" alt="Twitter" className="twitter" /> </a>
+          <a href="#"><img src="/icons/logos/youtubelogo.png" alt="YouTube" className="youtube" /> </a>
+          <a href="#"><img src="/icons/logos/instagramlogo.png" alt="Instagram" className="instagram" /> </a>
+          <a href="#"><img src="/icons/logos/linkedinlogo.png" alt="LinkedIn" className="linkedin" /> </a>
         </div>
         </div>
 

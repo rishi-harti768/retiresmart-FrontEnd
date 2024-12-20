@@ -31,7 +31,6 @@ footer {
   
   .footer-brand p {
     margin: 5px 0;
-    font-style: italic;
     color: var(--color-secondary-light, #b0b0b0);
   }
   
@@ -40,13 +39,14 @@ footer {
     justify-content: left;
     gap: 15px;
     margin-top: 15px;
+
   }
   
   .social-links a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: var(--color-secondary, #eeeeee);
+    color: white;
     font-size: 16px;
     transition: transform 0.3s ease, filter 0.3s ease;
   }
@@ -93,7 +93,7 @@ footer {
   /* Section 3: Address */
   .footer-address {
     text-align: left;
-    margin-left: 180px;
+    margin-left: auto;
   }
   
   .footer-address h3 {
